@@ -142,7 +142,7 @@ void setPosition(vec4 proj, vec2 offset) {
     offset.x /= viewportWidth / 2.0;
     offset.y /= viewportHeight / 2.0;
     // Compensate for automatic division by w
-    offset *= proj.w;
+    // offset *= proj.w;
   } else {
     // The line thickness should be scaled the same way the camera scales other distances.
     // projection[0].xyz is the result of projecting a unit x-vector, so its length represents
